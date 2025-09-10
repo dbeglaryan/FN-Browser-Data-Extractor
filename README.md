@@ -1,12 +1,10 @@
-# 🧊 FrostNode | Browser Data Extractor ⚡
+# 🧊 Frostveil | Browser Forensics Toolkit ⚡
 
-A professional **browser artifact extractor** that stays **portable** and **forensic-grade**.  
+Unveiling traces hidden beneath the frost — fast, portable, and forensic-grade.  
 Built with 🐍 **Python**, no external dependencies required.
 
 Collects **history, cookies, bookmarks, downloads, searches, sessions, and extensions**  
 from Chrome, Edge, and Firefox — with full logging and manifest signing. 🔍
-
-![Intro](intro.png)
 
 ---
 

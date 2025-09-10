@@ -1,7 +1,7 @@
-# FrostNode | Browser Data Extractor – Usage Guide
+# Frostveil | Browser Forensics Toolkit – Usage Guide
 
 ## Overview
-FrostNode is a forensic-ready browser artifact extractor that works across Chrome, Edge, and Firefox.  
+Frostveil is a forensic-ready browser artifact extractor that works across Chrome, Edge, and Firefox.  
 It collects history, cookies, bookmarks, downloads, searches, sessions, and extensions in a safe and portable way.
 
 ---
@@ -10,8 +10,8 @@ It collects history, cookies, bookmarks, downloads, searches, sessions, and exte
 No dependencies required.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FrostNode.git
-cd FrostNode
+git clone https://github.com/YOUR_USERNAME/Frostveil.git
+cd Frostveil
 python main.py --help
 ```
 
@@ -19,7 +19,7 @@ Optional: create a venv:
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate     # Windows
+.venv\Scripts\activate   # Windows
 ```
 
 ---
@@ -88,7 +88,7 @@ pyinstaller --onefile main.py
 ---
 
 ## Forensics & Integrity
-- FrostNode copies databases before reading to prevent modification.
+- Frostveil copies databases before reading to prevent modification.
 - All outputs are hashed (SHA256) and recorded in `manifest.json`.
 - Logs are timestamped in UTC.
 
