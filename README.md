@@ -6,6 +6,8 @@ Built with 🐍 **Python**, no external dependencies required.
 Collects **history, cookies, bookmarks, downloads, searches, sessions, and extensions**  
 from Chrome, Edge, and Firefox — with full logging and manifest signing. 🔍
 
+![Intro](intro.png)
+
 ---
 
 ## ✨ Features
