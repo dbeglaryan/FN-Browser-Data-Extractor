@@ -60,9 +60,20 @@ def write_outputs(rows, fmt, out, compress=False, split_artifacts=False, per_bro
 
     return outputs
 
+BANNER = r"""
+ _______  ______  _____  _______ _______ _    _ _______ _____       
+ |______ |_____/ |     | |______    |     \  /  |______   |   |     
+ |       |    \_ |_____| ______|    |      \/   |______ __|__ |_____
+                                                                     
+"""
 
 def main():
-    ap = argparse.ArgumentParser(description="Cross-browser forensic extractor (history, bookmarks, cookies, etc.)")
+    print(BANNER)
+    print("Frostveil | Browser Forensics Toolkit — unveiling traces hidden beneath the frost\n")
+    ap = argparse.ArgumentParser(
+        prog="frostveil",
+        description="Frostveil | Browser Forensics Toolkit — fast, portable, forensic-grade extraction of browser artifacts (Chrome, Edge, Firefox)."
+    )
     ap.add_argument("--format", choices=["csv", "json", "jsonl", "sqlite"], default="csv", help="Output format")
     ap.add_argument("--out", default="artifacts_export.csv", help="Output file name")
     ap.add_argument("--per-browser", action="store_true", help="separate outputs per browser")
@@ -110,7 +121,7 @@ def main():
     if args.report:
         report.generate(manifest)
 
-    print("--- SUMMARY ---")
+    print("\n=== Frostveil Extraction Summary ===")
     print(f"Host: {meta['hostname']} User: {meta['username']} OS: {meta['os']}")
     print(f"Acquired at: {meta['acquired_utc']}")
     print(f"Browsers scanned: {', '.join(browsers.keys())}")
